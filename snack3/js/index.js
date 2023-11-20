@@ -11,5 +11,4 @@ function wordLength (firstWord, secondWord) {
 
 const firstWord = prompt("Inserisci la prima parola: ");
 const secondWord = prompt("Inserisci la seconda parola: ");
-firstWord.length
 wordLength(firstWord, secondWord);
