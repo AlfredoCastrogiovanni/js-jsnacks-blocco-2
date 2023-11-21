@@ -7,6 +7,21 @@ function createSquare(squareNumber) {
     for(let i=0; i < squareNumber; i++) {
         const newSquare = document.createElement("div");
         newSquare.classList.add("square");
+
+        const squareContent = document.createElement("span");
+        squareContent.textContent = generateRandomNumber(1,i);
+        newSquare.append(squareContent);
+        
+        
+        newSquare.addEventListener("click", function() {
+            this.classList.toggle("clicked");
+        });
+        
         wrapper.append(newSquare);
     }
+}
+
+// Random number between two numbers
+function generateRandomNumber(min, max) {
+    return Math.floor((Math.random() * (max - min)) + min);
 }

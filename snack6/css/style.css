@@ -31,4 +31,12 @@ main {
     width: calc(100% / 5);
     height: calc(100% / 5);
     border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.square.clicked {
+    background-color: magenta;
 }
