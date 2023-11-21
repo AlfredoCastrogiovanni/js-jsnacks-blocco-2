@@ -23,13 +23,13 @@ main {
     margin: 3rem auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 .square {
-    width: calc(100% / 5);
-    height: calc(100% / 5);
+    width: calc(100% / 10);
+    height: calc(100% / 10);
     border: 2px solid black;
     display: flex;
     justify-content: center;
@@ -37,6 +37,18 @@ main {
     font-size: 2rem;
 }
 
-.square.clicked {
-    background-color: magenta;
+.square span {
+    display: none;
+}
+
+.square.clicked.bg-blue {
+    background-color: rgb(30, 0, 255);
+}
+
+.square.clicked.bg-red {
+    background-color: rgb(255, 0, 25);
+}
+
+.square.clicked span {
+    display: inline-block;
 }

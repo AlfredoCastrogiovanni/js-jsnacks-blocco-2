@@ -12,7 +12,8 @@ function createSquare(squareNumber) {
         squareContent.textContent = generateRandomNumber(1,i);
         newSquare.append(squareContent);
         
-        
+        parseInt(squareContent.textContent) % 2 == 0 ? newSquare.classList.add("bg-blue") : newSquare.classList.add("bg-red");
+
         newSquare.addEventListener("click", function() {
             this.classList.toggle("clicked");
         });
