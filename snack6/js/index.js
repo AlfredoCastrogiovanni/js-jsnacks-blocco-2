@@ -12,7 +12,7 @@ function generateRandomNumber(min, max) {
 }
 
 // create new square many times
-function createSquareTimes(SquareNumber) {
+function createSquareTimes(squareNumber) {
     for(let i=0; i < squareNumber; i++) {
         createSquare();
     }
@@ -24,7 +24,7 @@ function createSquare() {
     newSquare.classList.add("square");
 
     const squareContent = document.createElement("span");
-    squareContent.textContent = generateRandomNumber(1,i);
+    squareContent.textContent = generateRandomNumber(1,100);
     newSquare.append(squareContent);
     
     parseInt(squareContent.textContent) % 2 == 0 ? newSquare.classList.add("bg-blue") : newSquare.classList.add("bg-red");
