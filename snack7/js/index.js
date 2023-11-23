@@ -3,6 +3,8 @@ const output = document.getElementById("output");
 
 const buttonStart = document.getElementById("start");
 const buttonStop = document.getElementById("stop");
+const buttonReset = document.getElementById("reset");
+
 let myInterval;
 
 buttonStart.addEventListener("click", () => {
@@ -14,3 +16,7 @@ buttonStart.addEventListener("click", () => {
 buttonStop.addEventListener("click", () => {
     clearInterval(myInterval);
 });
+
+buttonReset.addEventListener("click", () => {
+    output.innerText = 0;
+})
